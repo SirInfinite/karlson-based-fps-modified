@@ -25,6 +25,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float defaultRunSpeed = 24f;
     private float walkSpeed;
     private float runSpeed;
+    private Vector3 velocity = Vector3.zero;
+    private Vector3 acceleration = Vector3.zero;
+    public float maxSpeed = 28f;
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
@@ -59,8 +62,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+
     void Update()
     {
+        bool isRunning = Input.GetKey(KeyCode.LeftShift);
         ProcessInput();
 
         if (!characterController.isGrounded)
@@ -68,7 +74,7 @@ public class PlayerController : MonoBehaviour
             moveDirection.y -= gravity * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.LeftShift) && canMove && characterController.height != 1)
+        if (isRunning && canMove && characterController.height != 1)
         {
             playerCamera.fieldOfView = initialFOV + 3.5f;
         }
