@@ -76,11 +76,11 @@ public class PlayerController : MonoBehaviour
 
         if (isRunning && canMove && characterController.height != 1)
         {
-            playerCamera.fieldOfView = initialFOV + 3.5f;
+            playerCamera.fieldOfView = initialFOV + 3f;
         }
         else if (Input.GetKey(KeyCode.C) && canMove)
         {
-            playerCamera.fieldOfView = initialFOV - 4f;
+            playerCamera.fieldOfView = initialFOV - 5.5f;
         }
         else
         {
