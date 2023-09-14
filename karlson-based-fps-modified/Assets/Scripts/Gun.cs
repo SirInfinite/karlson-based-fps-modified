@@ -11,9 +11,17 @@ public class Gun : MonoBehaviour
 
     float timeSinceLastShot;
     public LayerMask interactableLayers;
+    private Camera mainCamera;
 
     private void Start()
     {
+        mainCamera = Camera.main;
+        if (mainCamera == null)
+        {
+            Debug.LogError("Main camera not found in the scene.");
+            return;
+        }
+
         PlayerShoot.shootInput += Shoot;
     }
 
@@ -26,7 +34,7 @@ public class Gun : MonoBehaviour
         {
             if (CanShoot())
             {
-                if (Physics.Raycast(muzzle.position, transform.forward, out RaycastHit hitInfo, gunData.maxDistance, interactableLayers))
+                if (Physics.Raycast(muzzle.position, Camera.main.transform.forward, out RaycastHit hitInfo, gunData.maxDistance, interactableLayers))
                 {
                     Debug.Log(hitInfo.transform.name);
                     Debug.DrawLine(muzzle.position, hitInfo.point, Color.red, 0.5f);
@@ -43,8 +51,7 @@ public class Gun : MonoBehaviour
     {
         timeSinceLastShot += Time.deltaTime;
 
-        Debug.DrawRay(muzzle.position, transform.forward, Color.green);
-        Debug.DrawLine(muzzle.position, muzzle.position + muzzle.forward * 2f, Color.blue);
+        Debug.DrawRay(muzzle.position, Camera.main.transform.forward, Color.green);
     }
 
     private void OnGunShot()
