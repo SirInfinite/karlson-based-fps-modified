@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f50f04954498a9d4cac1ce0d5455af64, type: 3}
-  m_Name: AssultRifle
+  m_Name: Shotgun
   m_EditorClassIdentifier: 
   name: 
-  damage: 22
-  maxDistance: 200
-  currentAmmo: 5
-  magSize: 31
-  fireRate: 600
-  reloadTime: 1.5
+  damage: 75
+  maxDistance: 33
+  currentAmmo: 3
+  magSize: 3
+  fireRate: 60
+  reloadTime: 2.2
   reloading: 0

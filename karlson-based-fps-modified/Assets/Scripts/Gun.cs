@@ -6,23 +6,37 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] GunData gunData;
-    [SerializeField] Transform muzzle;
+    [SerializeField] private GunData gunData;
+    [SerializeField] private Transform cam;
+    [SerializeField] private Transform muzzle;
 
     float timeSinceLastShot;
-    public LayerMask interactableLayers;
-    private Camera mainCamera;
 
     private void Start()
     {
-        mainCamera = Camera.main;
-        if (mainCamera == null)
-        {
-            Debug.LogError("Main camera not found in the scene.");
-            return;
-        }
-
         PlayerShoot.shootInput += Shoot;
+        PlayerShoot.reloadInput += StartReload;
+    }
+
+    private void OnDisable() => gunData.reloading = false;
+
+	public void StartReload()
+    {
+        if (!gunData.reloading && this.gameObject.activeSelf)
+        {
+            StartCoroutine(Reload());
+        }
+    }
+
+    private IEnumerator Reload()
+    {
+        gunData.reloading = true;
+
+        yield return new WaitForSeconds(gunData.reloadTime);
+
+        gunData.currentAmmo = gunData.magSize;
+
+        gunData.reloading = false;
     }
 
     // checks if can shoot if we arent reloading, and if its been more than the cooldown (1s/rps)
@@ -34,10 +48,9 @@ public class Gun : MonoBehaviour
         {
             if (CanShoot())
             {
-                if (Physics.Raycast(muzzle.position, Camera.main.transform.forward, out RaycastHit hitInfo, gunData.maxDistance, interactableLayers))
+                if (Physics.Raycast(cam.position, cam.forward, out RaycastHit hitInfo, gunData.maxDistance))
                 {
-                    Debug.Log(hitInfo.transform.name);
-                    Debug.DrawLine(muzzle.position, hitInfo.point, Color.red, 0.5f);
+                    Debug.Log(hitInfo.transform.gameObject);
 
                     gunData.currentAmmo--;
                     timeSinceLastShot = 0;
@@ -51,7 +64,7 @@ public class Gun : MonoBehaviour
     {
         timeSinceLastShot += Time.deltaTime;
 
-        Debug.DrawRay(muzzle.position, Camera.main.transform.forward, Color.green);
+        Debug.DrawRay(cam.position, cam.forward * gunData.maxDistance, Color.green);
     }
 
     private void OnGunShot()

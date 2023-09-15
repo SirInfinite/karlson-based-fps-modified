@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 81801404}
   - component: {fileID: 81801403}
   - component: {fileID: 81801402}
-  m_Layer: 6
-  m_Name: Cube (1)
+  m_Layer: 0
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 240916829}
   - component: {fileID: 240916828}
   - component: {fileID: 240916827}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,8 +451,8 @@ GameObject:
   - component: {fileID: 348037293}
   - component: {fileID: 348037292}
   - component: {fileID: 348037291}
-  m_Layer: 6
-  m_Name: Cube
+  m_Layer: 0
+  m_Name: BigCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 426224831}
   - component: {fileID: 426224830}
   - component: {fileID: 426224829}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -699,7 +699,7 @@ GameObject:
   - component: {fileID: 467323346}
   - component: {fileID: 467323345}
   - component: {fileID: 467323344}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Ramp (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -802,7 +802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 484474673}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: WarmCubeStack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,7 +839,7 @@ GameObject:
   - component: {fileID: 487654313}
   - component: {fileID: 487654312}
   - component: {fileID: 487654311}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Ramp (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1154,7 +1154,7 @@ GameObject:
   - component: {fileID: 815657193}
   - component: {fileID: 815657192}
   - component: {fileID: 815657191}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Ramp (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1291,7 +1291,7 @@ GameObject:
   - component: {fileID: 1094944537}
   - component: {fileID: 1094944536}
   - component: {fileID: 1094944535}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1397,7 +1397,7 @@ GameObject:
   - component: {fileID: 1121321340}
   - component: {fileID: 1121321339}
   - component: {fileID: 1121321338}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1502,7 +1502,7 @@ GameObject:
   - component: {fileID: 1143433496}
   - component: {fileID: 1143433495}
   - component: {fileID: 1143433494}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Ramp (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1608,7 +1608,7 @@ GameObject:
   - component: {fileID: 1169853344}
   - component: {fileID: 1169853343}
   - component: {fileID: 1169853342}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1752,7 +1752,7 @@ GameObject:
   - component: {fileID: 1208522921}
   - component: {fileID: 1208522920}
   - component: {fileID: 1208522919}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1857,7 +1857,7 @@ GameObject:
   - component: {fileID: 1334661167}
   - component: {fileID: 1334661166}
   - component: {fileID: 1334661165}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Ramp (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1963,8 +1963,8 @@ GameObject:
   - component: {fileID: 1359633610}
   - component: {fileID: 1359633609}
   - component: {fileID: 1359633608}
-  m_Layer: 6
-  m_Name: Cube
+  m_Layer: 0
+  m_Name: BigCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2069,7 +2069,7 @@ GameObject:
   - component: {fileID: 1451611762}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2161,7 +2161,7 @@ GameObject:
   - component: {fileID: 1497270897}
   - component: {fileID: 1497270896}
   - component: {fileID: 1497270895}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2266,7 +2266,7 @@ GameObject:
   - component: {fileID: 1511292504}
   - component: {fileID: 1511292503}
   - component: {fileID: 1511292502}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Ramp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2372,7 +2372,7 @@ GameObject:
   - component: {fileID: 1652400912}
   - component: {fileID: 1652400911}
   - component: {fileID: 1652400910}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2477,7 +2477,7 @@ GameObject:
   - component: {fileID: 1695288375}
   - component: {fileID: 1695288374}
   - component: {fileID: 1695288373}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2582,8 +2582,8 @@ GameObject:
   - component: {fileID: 1706718057}
   - component: {fileID: 1706718056}
   - component: {fileID: 1706718055}
-  m_Layer: 6
-  m_Name: Cube
+  m_Layer: 0
+  m_Name: BigCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2684,7 +2684,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1737836122}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ColdCubeStack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2721,8 +2721,8 @@ GameObject:
   - component: {fileID: 1738357263}
   - component: {fileID: 1738357262}
   - component: {fileID: 1738357261}
-  m_Layer: 6
-  m_Name: Cube (1)
+  m_Layer: 0
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2826,7 +2826,7 @@ GameObject:
   - component: {fileID: 1750627994}
   - component: {fileID: 1750627993}
   - component: {fileID: 1750627992}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Ramp (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2929,7 +2929,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1775070240}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GreenCubeStack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2966,8 +2966,8 @@ GameObject:
   - component: {fileID: 1830917515}
   - component: {fileID: 1830917514}
   - component: {fileID: 1830917513}
-  m_Layer: 6
-  m_Name: Cube (1)
+  m_Layer: 0
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3071,7 +3071,7 @@ GameObject:
   - component: {fileID: 1862716731}
   - component: {fileID: 1862716730}
   - component: {fileID: 1862716729}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3177,7 +3177,7 @@ GameObject:
   - component: {fileID: 1906263026}
   - component: {fileID: 1906263025}
   - component: {fileID: 1906263024}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3377,7 +3377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2033183822}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: TestRamps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3508,10 +3508,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunData: {fileID: 11400000, guid: 5184d5d5a4167cb40b9e274f645ab926, type: 2}
+  cam: {fileID: 1451611761}
   muzzle: {fileID: 957173397}
-  interactableLayers:
-    serializedVersion: 2
-    m_Bits: 200
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class GunData : ScriptableObject
     [SerializeField] public int currentAmmo;
     [SerializeField] public int magSize;
     [SerializeField] public float fireRate;
-    [HideInInspector] public float reloadTime;
-    [SerializeField] public bool reloading;
+    [SerializeField] public float reloadTime;
+    [HideInInspector] public bool reloading;
 
 }
