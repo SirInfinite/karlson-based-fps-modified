@@ -23,10 +23,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float crouchSpeed;
     [SerializeField] private float defaultWalkSpeed = 12f;
     [SerializeField] private float defaultRunSpeed = 24f;
-    private float walkSpeed;
-    private float runSpeed;
-    private Vector3 velocity = Vector3.zero;
-    private Vector3 acceleration = Vector3.zero;
+    [HideInInspector] private float walkSpeed;
+    [HideInInspector] private float runSpeed;
     public float maxSpeed = 28f;
 
     private Vector3 moveDirection = Vector3.zero;
@@ -76,11 +74,11 @@ public class PlayerController : MonoBehaviour
 
         if (isRunning && canMove && characterController.height != 1)
         {
-            playerCamera.fieldOfView = initialFOV + 3.5f;
+            playerCamera.fieldOfView = initialFOV + 3f;
         }
         else if (Input.GetKey(KeyCode.C) && canMove)
         {
-            playerCamera.fieldOfView = initialFOV - 4f;
+            playerCamera.fieldOfView = initialFOV - 5.5f;
         }
         else
         {
