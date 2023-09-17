@@ -39,7 +39,7 @@ public class Gun : MonoBehaviour
         gunData.reloading = false;
     }
 
-    // checks if can shoot if we arent reloading, and if its been more than the cooldown (1s/rps)
+    // cooldown (gunData.fireRate / 60f) = 1s/rps
     private bool CanShoot() => !gunData.reloading && timeSinceLastShot > 1f / (gunData.fireRate / 60f);
 
     public void Shoot()
@@ -50,13 +50,14 @@ public class Gun : MonoBehaviour
             {
                 if (Physics.Raycast(cam.position, cam.forward, out RaycastHit hitInfo, gunData.maxDistance))
                 {
-                    Debug.Log(hitInfo.transform.gameObject);
-
-                    gunData.currentAmmo--;
-                    timeSinceLastShot = 0;
-                    OnGunShot();
+                    IDamageable damageable = hitInfo.transform.GetComponent<IDamageable>();
+                    damageable?.TakeDamage(gunData.damage);
                 }
-            }
+
+				gunData.currentAmmo--;
+				timeSinceLastShot = 0;
+				OnGunShot();
+			}
         }
     }
 

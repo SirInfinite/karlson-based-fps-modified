@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: AssultRifle
   m_EditorClassIdentifier: 
   name: 
-  damage: 20
+  damage: 12
   maxDistance: 125
-  currentAmmo: 15
+  currentAmmo: 4
   magSize: 60
   fireRate: 600
   reloadTime: 2
